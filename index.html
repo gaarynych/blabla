@@ -1,0 +1,44 @@
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+    var c=document.getElementById("myCanvas");
+    var pen=c.getContext("2d");
+    // pen.moveTo(100,0);//start of line
+    // pen.lineTo(200,100);//draw line
+    // pen.stroke();
+
+    pen.beginPath();
+    pen.arc(200,200,150,0,2*Math.PI);
+    pen.fillStyle="blue";
+    pen.fill();
+    pen.strokeStyle="blue";
+  
+
+    pen.beginPath();
+    pen.rect(100,100,100,100);
+    pen.fillStyle="red";
+    pen.fill();
+   
+
+    pen.beginPath();
+    pen.rect(200,100,100,100);
+    pen.fillStyle="green";
+    pen.fill();
+  
+
+    pen.beginPath();
+    pen.rect(100,200,100,100);
+    pen.fillStyle="darkblue";
+    pen.fill();
+   
+
+    pen.beginPath();
+    pen.rect(200,200,100,100);
+    pen.fillStyle="yellow";
+    pen.fill()
+   
+    
+
+
+    // pen.rect(20,20,50,50);
+    pen.stroke();
+</script>
